@@ -1,0 +1,25 @@
+/* pages/gitarplayer/gitarplayer.wxss */
+  @import '/template/template.wxss';
+
+.back{
+  width: 100%;
+  height: 100%;
+  background: rgb(234, 249, 250);
+}
+
+.search{
+    padding: 20rpx;
+}
+.search-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50rpx;
+    color: #aaa;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 20rpx;
+}
+.search-text icon{
+    margin-right: 10rpx;
+}

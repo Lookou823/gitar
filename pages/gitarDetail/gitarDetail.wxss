@@ -1,0 +1,184 @@
+/* pages/gitarDetail/gitarDetail.wxss */
+
+.main{
+
+display: flex;
+flex-direction: column;
+/* 竖向布局居中 */
+align-items: center;
+
+
+}
+
+.icon{
+  border: 8rpx solid;
+  border-color: #226fa3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100rpx;
+  height: 100rpx;
+  position: absolute;
+  background: #fcf3c9;
+  margin-top: 335rpx;
+  margin-left: 300rpx;
+  align-items: center;
+}
+.icon image{
+
+  width: 70rpx;
+  height: 70rpx;
+}
+
+
+.header{
+
+  width: 100%;
+  height: 100%;
+  background: white;
+  position: relative;
+}
+
+.header image{
+
+  width: 100%;
+  height: 100%;
+}
+
+
+.content{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  /* background: yellow; */
+  text-align: left;
+  margin-top: 80rpx;
+  
+}
+.content text{
+  text-overflow:ellipsis;
+  word-wrap:break-word;
+}
+.title{
+  font-size: 40rpx;
+  font-weight: 900;
+}
+
+
+.type{
+  margin-top: 20rpx;
+  color: rgba(0, 132, 255, 0.521);
+}
+
+.intro{
+  margin-top: 20rpx;
+}
+
+
+/* 测试轮播图的样式代码 */
+.swiper-block{
+
+height: 480rpx;
+
+width: 100%;
+
+}
+
+.swiper-item{
+
+display: flex;
+
+flex-direction: column;
+
+justify-content: center;
+
+align-items: flex-center;
+
+overflow:unset;
+
+}
+
+.slide-image{
+
+height:320rpx;
+
+width: 520rpx;
+
+border-radius: 9rpx;
+
+box-shadow: 0px 0px 30rpx rgba(0, 0,0,.2);
+
+margin: 0rpx 18rpx;
+
+z-index: 1;
+
+}
+
+.active{
+
+transform: scale(1.14);
+
+transition:all .2s ease-in 0s;
+
+z-index: 20;
+
+}.swiper-block{
+
+height: 480rpx;
+
+width: 100%;
+
+}
+
+.attr{
+
+  margin-top: 20rpx;
+  font-size: 34rpx;
+  font-weight: 600;
+
+
+
+}
+
+/* .swiper-item{
+
+display: flex;
+
+flex-direction: column;
+
+justify-content: center;
+
+align-items: flex-start;
+
+overflow:unset;
+
+}
+
+.slide-image{
+
+height:320rpx;
+
+width: 520rpx;
+
+border-radius: 9rpx;
+
+box-shadow: 0px 0px 30rpx rgba(0, 0,0,.2);
+
+margin: 0rpx 30rpx;
+
+z-index: 1;
+
+}
+
+.active{
+
+transform: scale(1.14);
+
+transition:all .2s ease-in 0s;
+
+z-index: 20;
+
+}
+ */

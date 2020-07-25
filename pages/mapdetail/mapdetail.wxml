@@ -1,0 +1,16 @@
+<!--pages/mapdetail/mapdetail.wxml-->
+<view class="container">
+<!-- 
+  <view class="header">
+      <image class="map" src="https://gitar-1300314777.cos.ap-chengdu.myqcloud.com/%E5%9C%B0%E5%9B%BE%E4%BF%A1%E6%81%AF.jpg" mode="widthFix" ></image>
+
+
+  </view> -->
+
+<view class="map_text">
+    <text class="h1">浙江省杭州市江干区智格豪城1幢1-1号商铺桃木子艺术</text>
+
+
+</view>
+
+</view>

@@ -1,0 +1,7 @@
+<!--pages/classinfo/classinfo.wxml-->
+
+<view class="contain">
+
+<text>课程安排通知</text>
+
+</view>

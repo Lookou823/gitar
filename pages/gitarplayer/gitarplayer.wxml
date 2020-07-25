@@ -1,0 +1,11 @@
+<!--pages/gitarplayer/gitarplayer.wxml-->
+
+
+  <view class="back">
+    <!-- 使用模板 -->
+    <import src="/template/template.wxml" />
+    <block wx:for = "{{gpList}}" wx:for-item = 'item' >
+　　<!-- template -->
+　　　　<template is='infoitem' data="{{item}}"/>
+      </block>
+</view>

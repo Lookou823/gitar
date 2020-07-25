@@ -1,0 +1,60 @@
+<!--pages/gitarDetail/gitarDetail.wxml-->
+<!-- 设置一个多张图片的竖向滚动 -->
+
+<view class="main">
+<!-- 放置吉他图 -->
+  <view class="header">
+  <image src="{{gitar.urlInput}}" mode="widthFix"> </image>
+  
+  </view>
+
+  <view class="icon" bindtap="sendRequire">
+  <image src="{{img}}"></image>
+  
+  </view>
+
+<!-- 内容介绍 -->
+
+    <view class="content">
+        <text class="title">{{gitar.attri}}</text>
+        <text class="type">尺寸:{{gitar.size}}\n</text>
+        <text class="attr">品类:{{gitar.type}}</text>
+        <text class="attr">面板:{{gitar.mianban}}</text>
+        <text class="attr">背板:{{gitar.beiban}}</text>
+        <text class="attr">侧板:{{gitar.ceban}}</text>
+        <text class="attr">指板:{{gitar.zhiban}}</text>
+        <text class="attr">琴弦:{{gitar.qinxian}}</text>
+        <text class="attr">涂装:{{gitar.tuzhuang}}</text>
+        <text class="attr">十二品弦距:{{gitar.xianju}}</text>
+        <text class="attr">零售价:{{gitar.price}}</text>
+        <text class="attr">拾音器:{{gitar.plus}}</text>
+<!-- 
+        <text class="intro">古典吉他原名古典6弦琴，因定型于古典主义时期而得名。与竖琴、鲁特琴同属西洋弹拨乐器（古典式弦琴）。古典吉他此名称并不表示其仅限于演奏古典音乐，不同的音乐风格，例如古典音乐、弗拉明戈、爵士乐等皆能以古典吉他演奏。古典吉他也是吉他家族成员，也应当同钢琴、小提琴并列在世界三大乐器之中。</text> -->
+
+
+
+    </view>
+
+
+
+
+<!-- 无限滚动展示轮播图 -->
+
+  <swiper class="swiper-block" previous-margin="90rpx" next-margin="90rpx" current="0" bindchange="swiperChange">
+
+<block wx:for="{{gtdList}}" wx:index="{{index}}">
+
+<swiper-item class="swiper-item">
+
+<image mode="aspectFill" src="{{item.img}}" class="slide-image {{swiperIndex == index ? 'active' : ''}}"/>
+
+</swiper-item>
+
+</block>
+
+</swiper>
+
+
+
+
+</view>

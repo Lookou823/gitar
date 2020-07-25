@@ -1,0 +1,183 @@
+/* pages/infopage/infopage.wxss */
+@import '../common/common.wxss';
+
+.search{
+    padding: 20rpx;
+}
+
+/* 搜索框的样式代码 */
+.search-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50rpx;
+    color: #aaa;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 20rpx;
+}
+.search-text icon{
+    margin-right: 10rpx;
+    
+}
+
+
+/* 标题的样式代码 */
+.title1{
+    width: 100%;
+    padding:30rpx 0;
+    height: 40rpx;
+    color: test;
+    text-align: center;
+}
+
+/* 轮播图的样式代码 */
+.sw-info{
+  position: relative;
+}
+swiper {
+    height: 500.5rpx;
+ 
+
+}
+swiper-item image {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.newest-box{
+    padding:0 40rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.newest-box .newest-list{
+    display: inline-block;
+    width: 100%;
+    height: 425rpx;
+    margin:0 20rpx 20rpx 0;
+    border-radius: 10px;
+    text-align: center;
+    background: #f5f6f5;
+    
+}
+.newest-box .newest-list:nth-child(2n){
+    margin-right: 0;
+}
+.newest-box .newest-list image{
+ 
+    width: 95%;
+    height: 325rpx;
+    margin: 20rpx 0 0rpx;
+    border-radius: 20rpx;
+}
+
+
+.newest-box .newest-list .text-row{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ 
+}
+
+
+
+.newest-box .newest-list .newest-text{
+    margin:0 20rpx 20rpx 0;
+
+    font-size: 32rpx;
+}
+
+
+/* 地图导航的样式代码 */
+.autonavigation{
+  background:#226fa3;
+  /* background: #9ac6f0 */
+  border-radius: 98rpx;
+  
+  height:98rpx;
+  width: 98rpx;
+  display: flex;
+  position: absolute;
+  bottom: 15rpx;
+  right: 60rpx;
+  justify-content: center;
+
+}
+.iconmap{
+  height: 80rpx;
+  width: 80rpx;
+}
+
+/* 测试轮播图的样式代码 */
+.swiper-block{
+
+height: 480rpx;
+
+width: 100%;
+
+}
+
+.swiper-item{
+
+display: flex;
+
+flex-direction: column;
+
+justify-content: center;
+
+align-items: flex-center;
+
+overflow:unset;
+
+}
+
+.slide-image{
+
+height:320rpx;
+
+width: 520rpx;
+
+border-radius: 9rpx;
+
+box-shadow: 0px 0px 30rpx rgba(0, 0,0,.2);
+
+margin: 0rpx 18rpx;
+
+z-index: 1;
+
+}
+
+.active{
+
+transform: scale(1.14);
+
+transition:all .2s ease-in 0s;
+
+z-index: 20;
+
+}.swiper-block{
+
+height: 480rpx;
+
+width: 100%;
+
+}
+
+
+/* 资讯 */
+
+.news{
+  width: 100%;
+  height: 100%;
+
+}
+
+
+.newsimg{
+  margin-left: 5%;
+  width: 90%;
+}

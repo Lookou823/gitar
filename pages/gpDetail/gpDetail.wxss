@@ -1,0 +1,136 @@
+/* pages/gpDetail/gpDetail.wxss */
+.main{
+width: 100%;
+height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  overflow: hidden;
+}
+
+.back{
+
+width: 100%;
+  height: 700rpx;
+  position: relative;
+ background: rgba(0, 0, 0, 0.4);
+}
+
+.aaaa{
+width: 100%;
+ 
+   height: 700rpx;
+    position: absolute;
+
+}
+
+
+
+.avatar{
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  width: 220rpx;
+  height: 220rpx;
+  border-radius: 220rpx;
+  justify-content: center;
+  position: relative;
+  border: solid white;
+}
+
+.intro{
+  margin-left: 20rpx;
+
+  margin-top: 200rpx;
+  position: relative;
+}
+
+.name{
+  font-size: 50rpx;
+  font-weight: 900;
+}
+.intro text{
+
+  color: white;
+}
+
+.tab{
+  
+  float: left;
+ width: 50%;
+ text-align: center;
+ padding: 10rpx 0;
+  }
+
+
+
+.topTabSwiper{
+  width: 100%;
+  color: silver;
+  margin-top: 600rpx;
+  position: absolute;
+  /* border-top: 1px solid rgb(253, 246, 214);
+  border-bottom: 1px solid rgb(253, 246, 214); */
+  zoom: 1;
+  
+  }
+.topTabSwiper:after{
+  content: ""; 
+  clear: both;
+  display: block;
+  }
+
+.tabBorer{
+  border-bottom: 3px solid rgb(20, 157, 199);
+   color: rgb(20, 157, 199);
+   
+   }
+
+
+.swiper{
+  width: 100%;
+  background-color: rgb(253, 246, 214);
+}
+.swiper_con{
+  text-align: center; 
+  width: 100%; 
+  height: 100%; 
+  padding: 0rpx 0;
+  background-color: white;
+
+  }
+
+.t-intro{
+
+  margin-top: 60rpx;
+   color: silver;
+  margin-right: 480rpx;
+
+
+}
+.divLine{
+  margin-top: 20rpx;
+ background: #E0E3DA;
+ width: 100%;
+ height: 5rpx;
+
+}
+.page{
+  margin-top:60rpx;
+}
+.page_hd{
+  margin-bottom: 20rpx;
+  text-align: left;
+}
+.page_title{
+  color: silver;
+  margin-bottom: 10rpx;
+}
+
+.intro2{
+  width: 100%;
+  height: 100%;
+  background:  -webkit-linear-gradient(top,black, rgb(82, 82, 85));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

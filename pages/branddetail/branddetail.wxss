@@ -1,0 +1,92 @@
+/* pages/branddetail/branddetail.wxss */
+
+.convas{
+background: rgb(241, 241, 241);
+display: flex;
+flex-direction: column;
+
+
+}
+
+
+.head{
+height: 300rpx;
+width: 100%;
+
+
+
+}
+
+
+/* 瀑布流的样式 */
+
+/* 单个图片容器的样式 */
+.bg {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.columnView {
+  width: 46%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.columnView .itemCover {
+    background: white;
+
+  width: 100%;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  border-radius: 38rpx;
+}
+
+
+
+/* 顶部导航栏 */
+
+.swiper-tab {
+ 
+display: flex;
+ 
+flex-direction: row;
+ 
+line-height: 80rpx;
+ background: white;
+border-bottom: 2rpx solid rgb(255, 255, 255);
+ 
+}
+ 
+ 
+.tab-item {
+ 
+width: 50%;
+ 
+text-align: center;
+ 
+font-size: 15px;
+ 
+color: #777;
+ 
+}
+ 
+ 
+.swiper {
+ 
+height: 1100px;
+ 
+background: #ffffff;
+ 
+}
+ 
+ 
+.on {
+ 
+color: #226fa3;
+ 
+border-bottom: 5rpx solid #226fa3;
+ 
+}

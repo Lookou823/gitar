@@ -1,0 +1,92 @@
+<!--pages/infopage/infopage.wxml-->
+<!-- 测试全局变量
+<button bindtap="showGlobalConstant">click</button> -->
+
+ <!-- 搜索框 -->
+  
+  
+      <!-- <view class="search">
+        <navigator url="search/search">
+            <view class="search-text">
+                <icon class="weui-icon-search_in-box search-icon" type="search" size="14"></icon>
+                搜 索
+            </view>
+        </navigator>
+    </view> -->
+<!-- 第一个模块的标题 -->
+    <!-- <view class="title1"><text>吉他社信息</text></view> -->
+    <view class="title1"><text>吉他社场地展示</text></view>
+
+<!--轮播图  -->
+<view class="sw-info">
+
+    <swiper indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" circular="true"  indicator-color="#9ac6f0"   indicator-active-color="#226fa3">
+        <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+            <swiper-item>
+                <image src="{{item}}" class="slide-image1" width="100%" mode="aspectFill"/>
+            </swiper-item>
+        </block>
+    </swiper>
+  <!-- 地图功能 -->
+
+<view class="autonavigation" bindtap="navigationLocation"><image class="iconmap" src="../../icon/地图 (2).png"  width="100%" height="100%"  mode="aspectFit"></image></view>
+
+</view>
+
+
+<!-- 第二个模块的标题 -->
+
+    <!-- <view class="title1"><text>资讯速递</text></view> -->
+
+
+<!-- 吉他模块的标题 -->
+
+    <view class="title1"><text>吉他品牌展示</text></view>
+
+
+    <!-- 无限滚动展示轮播图 -->
+
+  <swiper class="swiper-block" previous-margin="90rpx" next-margin="90rpx" current="0" bindchange="swiperChange">
+
+<block wx:for="{{brandList}}" wx:index="{{index}}">
+
+<swiper-item class="swiper-item">
+
+<image mode="aspectFit" bindtap="gotoBrand" data-id="{{index}}" src="{{item}}" class="slide-image {{swiperIndex == index ? 'active' : ''}}"/>
+
+</swiper-item>
+
+</block>
+
+</swiper>
+<!--  -->
+
+
+<!-- 第三个模块的标题 -->
+
+    <view class="title1"><text>吉他社资讯</text></view>
+    
+    <view class="news">
+    
+      <image class="newsimg" src="https://gitar-1300314777.cos.ap-chengdu.myqcloud.com/%E5%90%89%E4%BB%96%E8%B5%84%E8%AE%AF.jpg" mode="widthFix"></image>
+    
+    </view>
+
+<!--吉他产品信息  -->
+
+             <!-- for loop shows the items -->
+
+          <!-- <view class="newest-box">
+                
+                <view class="newest-list" wx:for="{{gitarList}}" wx:for-item="item" bindtap="gotoDetail" data-id="{{index}}">
+
+                    
+                      <image src="{{item.gitarUrl}}" mode="aspectFill"></image>
+                      <view class="text-row">
+                      <view class="newest-text"><text>{{item.gitarName}}</text></view>
+                      <view class="newest-text"><text>￥{{item.gitarPrice}}</text></view>
+                      </view>
+
+                </view>
+                
+          </view> -->

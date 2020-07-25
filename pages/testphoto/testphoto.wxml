@@ -1,0 +1,7 @@
+<!--pages/testphoto/testphoto.wxml-->
+<view class="container">
+  <button bindtap='getScancode'>绑定车辆</button>
+  <view wx:if="{{result !=''}}">
+    <view>  <text class=""> 扫码的内容:{{result}}  </text>  </view>
+  </view>
+</view>

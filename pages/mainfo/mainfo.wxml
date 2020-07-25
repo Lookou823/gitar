@@ -1,0 +1,33 @@
+<!--pages/mainfo/mainfo.wxml-->
+
+<view class="contain">
+
+             <image class="aaaa"   src="https://gitar-1300314777.cos.ap-chengdu.myqcloud.com/%E8%B4%9F%E8%B4%A3%E4%BA%BA/%E6%9D%8E%E5%B2%A92.jpg" mode="aspectFill"></image>
+             
+
+
+<view class="header">
+        <image class="avatar" src="https://gitar-1300314777.cos.ap-chengdu.myqcloud.com/%E8%B4%9F%E8%B4%A3%E4%BA%BA/%E6%9D%8E%E5%B2%A92.jpg"></image>
+      <text class="name">李 岩</text>
+      <text class="job">主要负责人</text>
+
+
+</view>
+
+    <view class="intro">
+    <view class="divLine"></view>
+
+    <text class="mes">负责人信息</text>
+
+    <text class="mesbody">学校：浙江理工大学\n电话：xxxxxxx\n</text>
+
+
+
+    </view>
+
+
+
+
+
+
+</view>

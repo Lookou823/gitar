@@ -1,0 +1,27 @@
+<!--pages/pinfo/pinfo.wxml-->
+<view class="main">
+    <view class="form-box">
+        <form bindsubmit="formSubmit">
+            <input value="{{address.name}}" name="name" placeholder="姓名"/>
+            <!-- 选择性别 -->
+            <picker bindchange="bindPicker1" value="{{index}}" range="{{array}}">
+            
+           <input disabled='true'  name="gender" value="{{array[index]}}" placeholder="性别"/>
+            
+            
+            </picker>
+            <!-- 选择类型 -->
+            <picker bindchange="bindPicker2" value="{{index2}}" range="{{array2}}">
+            
+                       <input  disabled='true' name="type" value="{{array2[index2]}}" placeholder="类型"/>
+            
+
+            </picker>
+
+
+            
+            <input type="digit" name="phone" value="{{address.phone}}" placeholder="电话号码"/>
+            <button form-type="submit">保存</button>
+        </form>
+    </view>
+</view>

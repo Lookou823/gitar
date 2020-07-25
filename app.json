@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/infopage/infopage",
+    "pages/branddetail/branddetail",
+    "pages/testformap/testformap",
+    "pages/gitarDetail/gitarDetail",
+    "pages/gpDetail/gpDetail",
+    "pages/personcenter/personcenter",
+    "pages/adinfo/adinfo",
+    "pages/testphoto2/testphoto2",
+    "pages/testphoto/testphoto",
+    "pages/regomap/regomap",
+    "pages/pinfo/pinfo",
+    "pages/gitarplayer/gitarplayer",
+    "pages/mainfo/mainfo",
+    "pages/classinfo/classinfo",
+    "pages/mapdetail/mapdetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#226fa3",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#b7b7b7",
+    "selectedColor": "#226fa3",
+    "borderStyle": "white",
+    "backgroundColor": "#fcf3c9",
+    "list": [
+      {
+        "pagePath": "pages/infopage/infopage",
+        "iconPath": "icon/看点_观看 (2).png",
+        "selectedIconPath": "icon/看点_观看 (5).png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/gitarplayer/gitarplayer",
+        "iconPath": "icon/【图标】类目-民谣吉他.png",
+        "selectedIconPath": "icon/【图标】类目-民谣吉他 (3).png",
+        "text": "吉他师档案"
+      },
+      {
+        "pagePath": "pages/personcenter/personcenter",
+        "iconPath": "icon/个人中心 选中 (2).png",
+        "selectedIconPath": "icon/个人中心 选中 (6).png",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

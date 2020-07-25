@@ -1,0 +1,142 @@
+/* pages/mainfo/mainfo.wxss */
+.contain{
+  display:flex;
+  flex-direction: column;
+  /* justify-content是给横轴用的 */
+  /* align-items是给纵轴用的 */
+ 
+  align-items: center;
+ 
+}
+
+
+.aaaa{
+    width: 900rpx;
+height:600rpx;
+margin-left: -20rpx;
+  position: absolute;
+
+}
+
+.header{
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+height:600rpx;
+position: relative;
+ background: rgba(0, 0, 0, 0.4);
+
+}
+
+
+.header  .avatar{
+  margin-top: 80rpx;
+  width:300rpx;
+  height: 300rpx;
+  border-radius: 50%;
+
+}
+
+.header .name{
+  margin-top: 10rpx;
+  color: white;
+  font-size: 30px;
+  font-weight: 780;
+}
+
+.header .job{
+
+  margin-top: 10rpx;
+  color: white;
+  /* font-size: 30px;
+  font-weight: 780; */
+
+}
+
+.intro{
+  width: 100%;
+  height: 600rpx;
+  background:  -webkit-linear-gradient(top,black, rgb(82, 82, 85));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mes{
+    margin-top: 40rpx;
+  font-weight: 550;
+  font-size: 18px;
+
+  color: white;
+  margin-right: 380rpx;
+
+}
+
+.divLine{
+ background: #E0E3DA;
+ width: 95%;
+ height: 5rpx;
+
+}
+
+.mesbody{
+  margin-top: 40rpx;
+  color: white;
+  margin-right: 280rpx;
+}
+
+
+/* 测试轮播图的样式代码 */
+.swiper-block{
+
+height: 480rpx;
+
+width: 100%;
+
+}
+
+.swiper-item{
+
+display: flex;
+
+flex-direction: column;
+
+justify-content: center;
+
+align-items: flex-center;
+
+overflow:unset;
+
+}
+
+.slide-image{
+
+height:320rpx;
+
+width: 520rpx;
+
+border-radius: 9rpx;
+
+box-shadow: 0px 0px 30rpx rgba(0, 0,0,.2);
+
+margin: 0rpx 18rpx;
+
+z-index: 1;
+
+}
+
+.active{
+
+transform: scale(1.14);
+
+transition:all .2s ease-in 0s;
+
+z-index: 20;
+
+}.swiper-block{
+
+height: 480rpx;
+
+width: 100%;
+
+}

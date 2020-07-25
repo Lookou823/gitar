@@ -1,0 +1,90 @@
+<!--pages/branddetail/branddetail.wxml-->
+
+<!-- 瀑布流展示吉他 -->
+<view class="convas">
+<image class="head" src = "{{f}}" mode="widthFix"></image>
+
+
+<!-- 顶部导航栏 -->
+<!--顶部导航栏-->
+              
+              <view class="swiper-tab" >
+
+              <view class="tab-item {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">面单</view>
+              
+              <view class="tab-item {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">全单</view>
+              
+              </view>
+
+
+      <!-- 导航栏分页界面 -->
+
+              <swiper class="swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange">
+              
+              <swiper-item>
+
+
+
+                                      <!-- 瀑布流代码块 -->
+
+                                                <scroll-view scroll-y="true" style="height:{{scrollH}}px"  >
+
+                                                <view class="bg">
+                                                <!-- 单独的两列 -->
+                                                <view class="columnView" >
+
+                                                <image class="itemCover"wx:for="{{co1}}" wx:key="index" src="{{item.urlInput}}" data-id="{{item.attri}}" mode="widthFix" bindtap="gotodetail1"></image>
+                                                </view>
+
+                                                <!-- 单独的两列 -->
+                                                <view class="columnView" >
+                                                <image class="itemCover" wx:for="{{co2}}" wx:key="index" src="{{item.urlInput}}" data-id="{{item.attri}}" mode="widthFix"  bindtap="gotodetail2"></image>
+
+                                                </view>
+
+
+                                                </view>
+
+
+
+                                                </scroll-view>
+
+
+
+
+
+                            </swiper-item>
+          
+              <swiper-item>
+  <scroll-view scroll-y="true" style="height:{{scrollH2}}px"  >
+                                                <view class="bg">
+                                                <!-- 单独的两列 -->
+                                                <view class="columnView" >
+
+                                                <image class="itemCover"wx:for="{{co3}}" wx:key="index" src="{{item.urlInput}}" data-id="{{item.attri}}" mode="widthFix" bindtap="gotodetail1"></image>
+                                                </view>
+
+                                                <!-- 单独的两列 -->
+                                                <view class="columnView" >
+                                                <image class="itemCover" wx:for="{{co4}}" wx:key="index" src="{{item.urlInput}}" data-id="{{item.attri}}" mode="widthFix"  bindtap="gotodetail2"></image>
+
+                                                </view>
+
+
+                                                </view>
+
+
+
+                                                </scroll-view>
+
+
+                            </swiper-item>
+              
+
+              </swiper>
+
+
+
+
+
+</view>

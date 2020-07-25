@@ -1,0 +1,101 @@
+
+
+
+.info-container{
+  margin-top: 40rpx;
+    margin-left: 70rpx;
+    border-radius: 20rpx;
+margin-bottom: 40rpx;
+width: 80%;
+height: 380rpx;
+display: flex;
+flex-direction: row;
+/* background:  -webkit-linear-gradient(left, rgb(81, 196, 81),rgb(13, 116, 19) ); */
+background:rgba(64, 190, 207, 0.575);
+
+}
+
+
+
+
+.author{
+  margin-left: 20rpx;
+  width:240rpx;
+  height: 340rpx;
+  border-radius: 20rpx;
+}
+
+.avatar{
+  margin-top: 20rpx;
+  width: 240rpx;
+  height: 340rpx;
+  border-radius: 20rpx;
+  border: 4rpx double  white;
+}
+.text-content{
+  color: white;
+    margin-top: 20rpx;
+  margin-left: 50rpx;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* text-decoration:underline; */
+}
+
+
+.star{
+  margin-top: 15rpx;
+display: flex;
+flex-direction: row;
+width: 100%;
+margin-right: 70rpx;
+height: 48rpx;
+/* background: black; */
+justify-content: left;
+margin-bottom: 40rpx;
+}
+
+.temp{
+width: 22px;
+height: 22px;
+}
+.name{
+  margin-top: 38rpx;
+font-size: 20px;
+font-weight:1000;
+
+}
+
+.xiugai{
+  margin-bottom: 110rpx;
+
+
+}
+
+.style{
+
+  /* font-weight:700; */
+
+}
+
+.fans{
+
+  /* font-weight:700; */
+
+
+}
+
+
+.intro{
+
+overflow:hidden;
+
+text-overflow:ellipsis;
+
+display:-webkit-box;
+
+-webkit-line-clamp:1;
+
+-webkit-box-orient:vertical;
+
+}

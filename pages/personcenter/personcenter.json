@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+
+      "popup": "../../component/popup/popup",
+      "imgup":"../../component/imgup/imgup"
+
+  },
+  "navigationBarTitleText": "个人中心",
+  "disableScroll": true
+      
+}

@@ -1,0 +1,108 @@
+<!--pages/gpDetail/gpDetail.wxml-->
+<view class="main">
+
+              <image class="aaaa"   src="{{player.avatar}}" mode="aspectFill"></image>
+
+          <view class="back">
+
+                      <image class="avatar" src="{{player.avatar}}"></image>
+                      <view class="intro">
+
+                          <text class="name">{{player.name}}\n</text>
+                          <text class="style">擅长风格：{{player.type}}\n</text>
+                      
+
+                      </view>
+
+          
+          </view>
+
+<!--  -->
+
+        <view class='topTabSwiper'>
+            <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}'  data-current = "0" bindtap='checkCurrent'>个人简介</view>
+            <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}'  data-current = "1" bindtap='checkCurrent'>指弹展示</view>
+            <!-- <view class='tab  {{currentData == 2 ? "tabBorer" : ""}}'  data-current = "2" bindtap='checkCurrent'>关注</view> -->
+        </view>
+        <swiper current="{{currentData}}" class='swiper' style="height:600px;" duration="300" bindchange="bindchange">
+
+
+          <swiper-item catchtouchmove="stopTouchMove">
+            
+            
+            
+        
+                <view class='swiper_con'>
+                            <view class="intro2">
+
+                <text class="t-intro">{{player.text}}</text>
+                              </view>
+
+                </view>
+          
+          
+          </swiper-item> 
+
+
+          <!-- 视频播放 -->
+          <swiper-item >
+
+            <view class='swiper_con'>
+                                      <view class="intro2">
+
+            <view class="newest-list" wx:for="{{videoList}}" wx:for-item="item" data-id="{{index}}">
+
+            <!-- 视频界面 -->
+            <view class="page">
+              <view class="page_hd">
+              <text class="page_title">{{item.name}}</text>
+              
+              </view>
+
+              <view class="page_bd">
+                <view class="section section_gap">
+                  <view class="body-view" style="text-align:center;">
+                    <video id="myVideo" src="{{item.src}}" binderror="videoErrorCallback" controls>
+                    
+                    </video>
+                  
+                  
+                  </view>
+                
+                
+                </view>
+              
+              </view>
+            </view>   
+    <view class="divLine"></view>
+
+
+
+            </view>
+
+
+<!-- for 循环结束 -->
+              </view>
+
+
+         </view>
+
+
+          
+          </swiper-item>
+          <!-- <swiper-item><view class='swiper_con'>welcome come to 关注</view></swiper-item>   -->
+</swiper>
+<!--  -->
+
+    <view class="">
+    
+    
+    
+    </view>
+
+
+
+
+
+
+</view>

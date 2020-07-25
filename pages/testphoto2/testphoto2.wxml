@@ -1,0 +1,4 @@
+<!--pages/testphoto2/testphoto2.wxml-->
+<text class='search_no'>点击可保存及分享二维码</text>
+<view class='view_img' >
+<image class='img' bindtap="previewImage" src='{{scene}}'></image></view>

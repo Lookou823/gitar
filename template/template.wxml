@@ -1,0 +1,45 @@
+
+
+<template name='infoitem'>
+
+  <view class="info-container" data-id="{{item._id}}" bindtap="gotoDetail">
+      <view class="author">
+      <image src="{{item.avatar}}" class="avatar" mode="aspectFill"></image>     
+      </view>
+
+
+      <view class="text-content">
+
+      <text class="name">{{item.name}}\n</text>
+      <view class="star">
+        <image class="temp" src="/icon/实心星星 (1).png"  mode="aspectFit"></image>
+        <image class="temp" src="/icon/实心星星 (1).png" mode="aspectFit"></image>
+        <image class="temp" src="/icon/实心星星 (1).png" mode="aspectFit"></image>
+
+      </view>
+      <view class="xiugai">
+      <text class="style">{{item.type}}\n</text>
+
+      <!-- <text class="fans">粉丝数：{{item.fans}}\n</text> -->
+      </view>
+      <!-- <text class="intro">个人简介：{{item.text}}\n</text> -->
+
+      </view>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </view>
+
+
+
+
+
+
+</template>
